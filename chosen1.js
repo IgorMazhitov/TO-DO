@@ -2,12 +2,12 @@ let dates = []
 function chosen(bttn) {
     let dateNow = bttn.innerHTML
     let dateRow = bttn.parentNode.children
-    if (bttn.style.backgroundColor == 'rgb(248, 249, 252)') {
-        bttn.style.backgroundColor = '#5B67A2'
-        bttn.style.color = '#F8F9FC'
+    if (bttn.style.backgroundColor == '#fff') {
+        bttn.style.backgroundColor = '#1095c1'
+        bttn.style.color = '#fff'
     } else {
-        bttn.style.backgroundColor = '#F8F9FC'
-        bttn.style.color = '#5B67A2'
+        bttn.style.backgroundColor = '#fff'
+        bttn.style.color = '#1095c1'
     }
     for (let el in dateRow) {
         if (dateRow[el].innerHTML == dateNow) {

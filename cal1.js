@@ -72,9 +72,9 @@ var Cal = function(divId) {
       var chkY = chk.getFullYear()
       var chkM = chk.getMonth()
       if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
-        html += '<td class="today" onclick="chosen(this); return false;" style="background-color: #F8F9FC;">' + i + '</td>'
+        html += '<td class="today" onclick="chosen(this); return false;" style="background-color: #fff;">' + i + '</td>'
       } else {
-        html += '<td class="normal" onclick="chosen(this); return false;" style="background-color: #F8F9FC;">' + i + '</td>'
+        html += '<td class="normal" onclick="chosen(this); return false;" style="background-color: #fff;">' + i + '</td>'
       }
       if ( dow == 0 ) {
         html += '</tr>'
