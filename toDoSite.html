@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex1.css">
+    <link rel="stylesheet" href="fixedPosition.css">
+    <link rel="stylesheet" href="calendarStyle.css">
+    <link rel="stylesheet" href="inputBox.css">
+    <link rel="stylesheet" href="sticker.css">
+    <link rel="stylesheet" href="doneContainer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="firstAdd.js"></script>
+    <script src="cal1.js"></script>
+    <script src="chosen1.js"></script>
+    <script src="addButton.js"></script>
+    <script src="displayButton.js"></script>
+    <script src="doneButton.js"></script>
+    <script src="infoButton.js"></script>
+    <script src="backBut.js"></script>
+    <style class="flexstickerBox"></style>
+    <style class="firstAddStyle">
+        .addEvent {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: #1095c1;
+            font-weight: bold;
+            font-size: xx-large;
+            border-radius: 2px;
+            border: 1px solid #1095c1;
+            background: linear-gradient(#1095c1 0 0) bottom / 100% var(--p, 0) no-repeat;
+            transition: 0.4s, background-position 0.4s;
+        }
+        .addEvent:hover {
+            --p: 100%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="startPage">
+        <div class="buttons4">
+            <div class="toDoMenu" onclick="displayDo(this); return false">
+                <div> TO DO </div>
+            </div>
+            <div class="doneMenu" onclick="displayDone(this); return false;">
+                <div> DONE </div>
+            </div>
+            <div class="infoMenu" onclick="displayInfo(this); return false;">
+                <div> INFO </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="display: none;">
+        <div class="stickerBox"></div>
+        <div class="addEvent" onclick="add(this); return false;">
+            <div class="firstAdd"> ADD </div>
+        </div>
+    </div>
+    <div class="rightCollumn">
+        <div class="backBut" onclick="back(); return false;" style="display: none;">
+            <div> BACK </div>
+        </div>
+        <div class="addButtonDiv" style="display: none; cursor: pointer;" onclick="rightAdd(); return false;">
+            <div> GO </div>
+        </div>
+    </div>
+    <div class="doneContainer" style="display: none;"></div>
+    <div class="infoContainer" style="display: none;">
+        <div class="infoFirstEl">
+            <div>
+                <div class="infoFirst">
+                    <h1> Hello. </h1>
+                    <p> My name is Igor. I'm 24 years old. </p>
+                    <p> My profession is - marine engineer. </p>
+                    <p> I'm living in Istanbul, Turkey since the beginning of the war between Russia and Ukraine. </p>
+                    <p> I was born in Vladivistok, Russia. </p>
+                </div>
+            </div>
+            <div>
+                <div class="infoSecond">
+                    <p> I started to learn JS, HTML and CSS on february 2022.</p>
+                    <p> Since then a lot of things has happened in my life. So there were a gaps between my studying periods. </p>
+                    <p> In total - I'm studying around 3-4 months. </p>
+                    <p> My target for a moment - to join a good company with a responsive employees. </p>
+                    <p> I hope, that i'll do it till spring 2023 or even earlier. </p>
+                    <p> Please, wish me a good luck:) </p>
+                </div>
+            </div>
+        </div>
+        <div class="infoSite">
+            <div>
+                <p> So, this is my first site ever. </p>
+                <p> Like all juniors in my opinion, i decided to make a 'TO DO' web-site. </p>
+                <p> 3 times i redraw the whole site design, started with a ordinary grid layout and ended up with flat design. </p>
+                <p> For me - design was the biggest issue cos there are so many ways to make your own design. Color palette i, honestly, stole from free sources.</p>
+                <p> JS part was the easiest one for me cos, maybe it will sounds arrogant, but I'm good with logic etc. HTML - same, there's only one thing to do - arrange all your elements in group.</p>
+                <p> CSS - thats the hardest for me. Like there are a billions of combinations of parameters, and each combination will give you different design. </p>
+                <p> So there is not that much of functions:  </p>
+                <ul>
+                    <li> Add event to a certain date </li>
+                    <li> Remove certain event </li>
+                    <li> All removed events will go to 'DONE' menu </li>
+                    <li> Back button </li>
+                </ul>
+                <p> I had used FlexBox, Grid in CSS. HTML not that much interesting. </p>
+                <p> During JS coding i had used: </p>
+                <ul>
+                    <li> New Prototype in calendar code</li>
+                    <li> Working with DOM 
+                        <li> parentNode </li>
+                        <li> ElementSibling </li>
+                        <li> All selectors (ClassName, ID, query)</li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="infoContacts">
+            <div class="insta" onclick="location.href='https://instagram.com/mazhitov.igor?igshid=YmMyMTA2M2Y='"><i class="fa fa-instagram" style="font-size:48px;"></i><p>INST</p></div>
+            <div class="git" onclick="location.href='https://github.com/IgorMazhitov'"><i class="fa fa-github" style="font-size:48px;"></i><p>GIT</p></div>
+            <div class="linkedin"><i class="fa fa-linkedin-square" style="font-size:48px"></i><p>LINKEDIN</p></div>
+        </div>
+    </div>
+</body>
+</html>
