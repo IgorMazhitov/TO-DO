@@ -1,0 +1,103 @@
+table {
+    height: 170px;
+    clear: both;
+    width: 100%;
+    border-radius: 3px;
+    border-collapse: collapse;
+
+}
+
+td {
+    height: 14.28571429%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #F0F3F4;
+    border-top: 1px solid #F0F3F4;
+    width: 14.28571429%;
+    background-color: #F0F3F4;
+    color: #1095c1;
+}
+
+td.not-current {
+    color: #c0c0c0;
+}
+
+td.today {
+    font-weight: 700;
+    color: #1095c1;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.normal:hover {
+    color: #3498DB;
+    font-weight: 700;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.calendar-wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'prev year next'
+    'cal cal cal'
+    'cal cal cal'
+    'cal cal cal';
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 30px 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#yearMonth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: year;
+    border: none;
+    background-color: #F0F3F4;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1095c1;
+}
+
+#divCal {
+    grid-area: cal;
+}
+
+#btnPrev {
+    border: none;
+    grid-area: prev;
+    border-top-left-radius: 5px;
+    background: linear-gradient(#1095c1 0 0) bottom / 100% var(--p, 0) no-repeat;
+    transition: 0.4s, background-position 0.4s;
+    border-bottom: 1px solid #1095c1;
+    border-right: 1px solid #1095c1;
+    padding: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1095c1;
+}
+
+#btnNext {
+    border: none;
+    grid-area: next;
+    background: linear-gradient(#1095c1 0 0) bottom / 100% var(--p, 0) no-repeat;
+    transition: 0.4s, background-position 0.4s;
+    border-bottom: 1px solid #1095c1;
+    border-left: 1px solid #1095c1;
+    padding: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1095c1;
+}
+
+#btnPrev:hover, #btnNext:hover {
+    --p: 100%;
+    color: #fff;
+}
