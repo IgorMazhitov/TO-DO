@@ -64,7 +64,7 @@ var Cal = function(divId) {
         html += '<tr>'
         var k = lastDayOfLastMonth - firstDayOfMonth+1
         for(var j=0; j < firstDayOfMonth; j++) {
-          html += '<td class="not-current" onclick="chosen(this); return false;">' + k + '</td>'
+          html += '<td class="not-current"; return false;">' + k + '</td>'
           k++
         }
       }
@@ -72,9 +72,9 @@ var Cal = function(divId) {
       var chkY = chk.getFullYear()
       var chkM = chk.getMonth()
       if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
-        html += '<td class="today" onclick="chosen(this); return false;" style="background-color: #fff;">' + i + '</td>'
+        html += '<td class="today" onclick="chosen(this); return false;" style="background-color: rgb(255, 255, 255);">' + i + '</td>'
       } else {
-        html += '<td class="normal" onclick="chosen(this); return false;" style="background-color: #fff;">' + i + '</td>'
+        html += '<td class="normal" onclick="chosen(this); return false;" style="background-color: rgb(255, 255, 255);">' + i + '</td>'
       }
       if ( dow == 0 ) {
         html += '</tr>'

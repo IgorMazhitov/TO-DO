@@ -2,12 +2,13 @@ let dates = []
 function chosen(bttn) {
     let dateNow = bttn.innerHTML
     let dateRow = bttn.parentNode.children
-    if (bttn.style.backgroundColor == '#fff') {
-        bttn.style.backgroundColor = '#1095c1'
-        bttn.style.color = '#fff'
+    console.log(bttn.style.backgroundColor)
+    if (bttn.style.backgroundColor == 'rgb(255, 255, 255)') {
+        bttn.style.backgroundColor = 'rgb(16, 149, 193)'
+        bttn.style.color = 'rgb(255, 255, 255)'
     } else {
-        bttn.style.backgroundColor = '#fff'
-        bttn.style.color = '#1095c1'
+        bttn.style.backgroundColor = 'rgb(255, 255, 255)'
+        bttn.style.color = 'rgb(16, 149, 193)'
     }
     for (let el in dateRow) {
         if (dateRow[el].innerHTML == dateNow) {
@@ -30,4 +31,5 @@ function chosen(bttn) {
         }
     }
     dates = dates.sort((a, b) => (a.split('-')[1] + a.split('-')[3]) - (b.split('-')[1] + b.split('-')[3]))
+    console.log('fuck')
 }
