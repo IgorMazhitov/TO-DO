@@ -100,5 +100,4 @@ function radioCheck(el) {
         }
         el.parentNode.remove()
     }
-    console.log(doneObj)
 }
