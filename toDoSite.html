@@ -19,27 +19,6 @@
     <script src="infoButton.js"></script>
     <script src="backBut.js"></script>
     <style class="flexstickerBox"></style>
-    <style class="firstAddStyle">
-        .addEvent {
-            width: 200px;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            color: #1095c1;
-            font-weight: bold;
-            font-size: xx-large;
-            border-radius: 2px;
-            border: 1px solid #1095c1;
-            background: linear-gradient(#1095c1 0 0) bottom / 100% var(--p, 0) no-repeat;
-            transition: 0.4s, background-position 0.4s;
-        }
-        .addEvent:hover {
-            --p: 100%;
-            color: #fff;
-        }
-    </style>
 </head>
 <body>
     <div class="startPage">
@@ -58,7 +37,7 @@
     <div class="container" style="display: none;">
         <div class="stickerBox"></div>
         <div class="addEvent" onclick="add(this); return false;">
-            <div class="firstAdd"> ADD </div>
+            <div> ADD </div>
         </div>
     </div>
     <div class="rightCollumn">
@@ -66,7 +45,7 @@
             <div> BACK </div>
         </div>
         <div class="addButtonDiv" style="display: none; cursor: pointer;" onclick="rightAdd(); return false;">
-            <div> GO </div>
+            <div> ADD </div>
         </div>
     </div>
     <div class="doneContainer" style="display: none;"></div>
