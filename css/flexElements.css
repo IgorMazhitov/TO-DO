@@ -86,14 +86,15 @@ body {
 .infoContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
+    height: 100vh;
+    width: 100vh;
 }
 
 .infoFirstEl {
     display: flex;
     flex-direction: column;
-    height: 635px;
+    width: auto;
+    height: 100%;
     border: 1px solid #1095c1;
 }
 
@@ -136,14 +137,14 @@ body {
 
 .infoContacts {
     margin-left: 2px;
-    width: 100px;
     border: 1px solid #1095c1;
     border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 635px;
+    height: 100%;
+    width: 100px;
 }
 
 .infoContacts > div {
@@ -181,8 +182,8 @@ body {
 }
 
 .infoSite {
-    width: 500px;
-    height: 635px;
+    width: 60%;
+    height: 100%;
     border: 1px solid #1095c1;
     color: #1095c1;
     margin-left: 2px;
