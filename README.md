@@ -1,4 +1,8 @@
-# TO-DO
-to do list site
-Excuses in advance, this is my first pet-project ever. 
-A lot of css files and some functions that i could put in one file or folder.
+#TO-DO web
+Functionality: 
+  -3 menu: TO DO/DONE/INFO
+  -'BACK' button
+  -Calendar in input box
+  -'Task' stickers
+  -Radio delete button on each task 
+  -All 'done' tasks go directly to 'DONE' menu
