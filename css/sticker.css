@@ -4,7 +4,7 @@
     flex-direction: column;
     min-height: 100px;
     max-height: fit-content;
-    max-width: 170px;
+    width: 170px;
     border-radius: 2px;
     text-transform: uppercase;
     font-weight: bold;

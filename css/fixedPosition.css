@@ -13,9 +13,7 @@
 }
 
 .rightCollumn {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: static;
     width: 120px;
     height: 100%;
     display: flex;
@@ -23,6 +21,7 @@
 }
 
 .rightCollumn > div {
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
