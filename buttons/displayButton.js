@@ -23,8 +23,6 @@ function displayDo(bttn) {
 
     } else {
 
-        stickerCheckbox.style.justifyContent = 'center'
-        stickerCheckbox.style.alignItems = 'center'
         centerAddButton.style.display = ''
         rightAddButton.style.display = 'none'
 

@@ -18,7 +18,8 @@ let inputBox = `<div class="inputBox">
 
 function add() {
 
-    let container = document.getElementsByClassName('container')[0]
+    const container = document.getElementsByClassName('container')[0]
+    const bodyBox = document.getElementsByTagName('body')[0]
 
     if (container.innerHTML.match('inputBox')) {
 
@@ -27,7 +28,7 @@ function add() {
 
     } else {
 
-        document.querySelector('.container').innerHTML = document.querySelector('.container').innerHTML + inputBox
+        bodyBox.innerHTML = bodyBox.innerHTML + inputBox
         document.getElementsByClassName('addEvent')[0].style.display = 'none'
         document.getElementsByClassName('addButtonDiv')[0].style.display = 'none'
 
@@ -45,12 +46,15 @@ function rightAdd() {
 
     document.getElementsByClassName('addButtonDiv')[0].style.display = 'none' // hide right add button
 
-    let inputBoxStyle = document.getElementsByClassName('inputBox')[0]
+    const inputBoxStyle = document.getElementsByClassName('inputBox')[0]
     inputBoxStyle.style.position = 'absolute'
     inputBoxStyle.style.top = '23,06666666666667%'
     inputBoxStyle.style.left = '32,37359550561798%'
 
-    let hideBox = document.getElementsByClassName('stickerBox')[0]
+    const hideBox = document.getElementsByClassName('stickerBox')[0]
     hideBox.style.display = 'none'
+
+    const containerFix = document.getElementsByClassName('container')[0]
+    containerFix.style.justifyContent = 'flex-end'
     
 }

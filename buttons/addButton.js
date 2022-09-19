@@ -88,11 +88,10 @@ function done(bttn) {
     document.getElementsByClassName('addButtonDiv')[0].style.display = ''
     document.getElementsByClassName('stickerBox')[0].style.display = ''
 
+    document.getElementsByClassName('container')[0].style = ''
+
     dates = []
 
-    const box4 = document.getElementsByClassName('stickerBox')[0]
-    box4.style.justifyContent = 'flex-start'
-    box4.style.alignItems = 'flex-start'
 
     document.getElementsByClassName('addEvent')[0].style.display = 'none'
 

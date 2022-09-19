@@ -6,12 +6,16 @@ function back() {
     const backButDisplay = document.getElementsByClassName('backBut')[0]
     const inputBox = document.getElementsByClassName('inputBox')[0]
 
-    console.log(inputBox)
+    const addCenterBut = document.getElementsByClassName('addEvent')[0]
+    addCenterBut.style.display = 'none'
 
+    container.style = ''
     container.style.display = 'none'
     startPage.style.display = ''
     backButDisplay.style.display = 'none'
-    inputBox.style.display = 'none'
+    if (inputBox) {
+        inputBox.style.display = 'none'
+    }
 
 
     const doneContainerDisplay = document.getElementsByClassName('doneContainer')[0]

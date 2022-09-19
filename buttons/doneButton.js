@@ -3,19 +3,20 @@ let doneArray = []
 
 function displayDone(bttn) {
 
-    let startPage = document.getElementsByClassName('startPage')[0]
+    const startPage = document.getElementsByClassName('startPage')[0]
     startPage.style.display = 'none'
 
-    let backButDisplay = document.getElementsByClassName('backBut')[0]
+    const backButDisplay = document.getElementsByClassName('backBut')[0]
+    backButDisplay.style = ''
     backButDisplay.style.display = ''
 
-    let containerDisplay = document.getElementsByClassName('container')[0]
+    const containerDisplay = document.getElementsByClassName('container')[0]
     containerDisplay.style.display = 'none'
 
-    let doneContainerDisplay = document.getElementsByClassName('doneContainer')[0]
+    const doneContainerDisplay = document.getElementsByClassName('doneContainer')[0]
     doneContainerDisplay.style.display = ''
-    doneContainerDisplay.style.justifyContent = 'flex-start'
-    doneContainerDisplay.style.alignItems = 'flex-start'
+
+    const doneStickerBox = document.getElementsByClassName('doneStickerBox')[0]
 
     if (doneContainerDisplay.innerHTML == '') {
 
@@ -23,7 +24,7 @@ function displayDone(bttn) {
 
             if (keys !== 'doneDate') {
 
-                doneContainerDisplay.innerHTML = doneContainerDisplay.innerHTML + 
+                doneStickerBox.innerHTML = doneStickerBox.innerHTML + 
                 `<div class="doneSticker">
                     <div class="doneDate doneDate${keys}">${keys}</div>
                     <div class="doneContent">${doneObj[keys].join(' ')}</div
@@ -43,7 +44,7 @@ function displayDone(bttn) {
 
                 if (keys !== 'doneDate') {
 
-                    doneContainerDisplay.innerHTML = doneContainerDisplay.innerHTML + 
+                    doneStickerBox.innerHTML = doneStickerBox.innerHTML + 
                     `<div class="doneSticker">
                         <div class="doneDate doneDate${keys}">${keys}</div>
                         <div class="doneContent">${doneObj[keys].join(' ')}</div

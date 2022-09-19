@@ -37,9 +37,6 @@
     </div>
     <div class="container" style="display: none;">
         <div class="stickerBox"></div>
-        <div class="addEvent" onclick="add(this); return false;">
-            <div> ADD </div>
-        </div>
         <div class="rightCollumn">
             <div class="backBut" onclick="back(); return false;" style="display: none;">
                 <div> BACK </div>
@@ -49,7 +46,15 @@
             </div>
         </div>
     </div>
-    <div class="doneContainer" style="display: none;"></div>
+    <div class="addEvent" onclick="add(this); return false;" style="display: none;">
+        <div> ADD </div>
+    </div>
+    <div class="doneContainer" style="display: none;">
+        <div class="backBut" onclick="back(); return false;">
+            <div> BACK </div>
+        </div>
+        <div class="doneStickerBox"></div>
+    </div>
     <div class="infoContainer" style="display: none;">
         <div class="infoFirstEl">
             <div>
@@ -104,6 +109,9 @@
                     <div class="linkedin"><i class="fa fa-linkedin-square" style="font-size:48px"></i><p>LINKEDIN</p></div>
                 </div>
             </div>
+        </div>
+        <div class="backBut" onclick="back(); return false;">
+            <div> BACK </div>
         </div>
     </div>
 </body>
