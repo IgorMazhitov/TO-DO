@@ -51,10 +51,8 @@ function rightAdd() {
     inputBoxStyle.style.top = '23,06666666666667%'
     inputBoxStyle.style.left = '32,37359550561798%'
 
-    const hideBox = document.getElementsByClassName('stickerBox')[0]
-    hideBox.style.display = 'none'
-
     const containerFix = document.getElementsByClassName('container')[0]
-    containerFix.style.justifyContent = 'flex-end'
+    containerFix.style.pointerEvents = 'none'
+    containerFix.style.filter = 'blur(4px)'
     
 }
