@@ -16,7 +16,7 @@ function radioCheck(el) {
         let del = dates.splice(dates.indexOf(delFromChecks), 1)
         del = stickerChecker.splice(stickerChecker.indexOf(delFromChecks), 1)
 
-        doneEvent = `<div>${el.nextElementSibling.innerHTML}</div>`
+        doneEvent = `<div id="doneEventText">${el.nextElementSibling.innerHTML}</div>`
         doneDate = el.parentNode.parentNode.previousElementSibling.innerHTML
 
         for (let key in doneObj) {

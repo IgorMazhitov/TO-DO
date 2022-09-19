@@ -15,6 +15,15 @@ let inputBox = `<div class="inputBox">
                     </div> 
                 </div>`
 
+
+const eventHandler = (event) => {
+    if (event.key === 'Enter') {
+        done()
+    }
+}
+
+
+
 function add() {
 
     let container = document.getElementsByClassName('container')[0]

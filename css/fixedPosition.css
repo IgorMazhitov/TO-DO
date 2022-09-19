@@ -29,10 +29,10 @@
 }
 
 .backBut {
+    margin-top: 8px;
+    margin-right: 8px;
     cursor: pointer;
-    height: 60px;
-    border-bottom: 1px solid #1095c1;
-    border-left: 1px solid #1095c1;
+    border: 1px solid #1095c1;
     color: #1095c1;
     font-weight: bold;
     font-size: large;
@@ -48,7 +48,9 @@
 .addButtonDiv {
     height: 100%;
     color: #1095c1;
-    border-left: 1px solid #1095c1;
+    border: 1px solid #1095c1;
+    border-top: none;
+    margin-right: 8px;
     font-weight: bold;
     font-size: large;
     background: linear-gradient(#1095c1 0 0) 0 / var(--p, 0) no-repeat;

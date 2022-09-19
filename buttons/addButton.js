@@ -15,11 +15,12 @@ const innerInbox = `<div class="inputLeft">
                     <button class="inputBttn" onclick="done(this); return false">&#8594</button> 
                 </div> `
 
+
 function done(bttn) {
 
     inputText = `<div class="checkBox">
                     <input type="radio" id="done" name="stickerCheckbox" value="done" onclick="radioCheck(this); return false;">
-                    <label for="stickerCheckbox">${document.getElementById('inputText').value}</label>
+                    <div id="eventText"">${document.getElementById('inputText').value}</div>
                 </div>`
 
     if (dates.length !== 0) {

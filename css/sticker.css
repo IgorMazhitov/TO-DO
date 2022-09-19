@@ -1,10 +1,10 @@
 .stickerContainer, .doneSticker {
-    margin: 10px 0px 10px 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100px;
     max-height: fit-content;
-    width: 170px;
+    max-width: 170px;
     border-radius: 2px;
     text-transform: uppercase;
     font-weight: bold;
@@ -26,9 +26,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
-    text-decoration: underline;
     color: #1095c1;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .stickerDate, .doneDate {
@@ -36,8 +35,36 @@
     color: #fff;
     width: 100%;
     height: 100%;
-    border: 1px solid #1095c1;
     border-bottom: none;
     text-align: center;
-    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.checkBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1095c1;
+    margin: 5px;
+}
+
+#done {
+    width: 10%;
+    margin: 0;
+    margin-right: 2px;
+}
+
+#eventText {
+    width: 90%;
+    word-wrap: break-word;
+}
+
+#doneEventText {
+    width: auto;
+    padding: 5px;
+    word-wrap: break-word;
+    border-bottom: 1px solid #1095c1;
 }
