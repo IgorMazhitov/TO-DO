@@ -1,7 +1,4 @@
 
-body {
-    position: relative;
-}
 
 .backBut > div {
     font-size: 16px;
@@ -24,11 +21,16 @@ body {
 }
 
 .backBut {
+    position: absolute;
+    top: 8px;
+    right: 8px;
     cursor: pointer;
-    border: 1px solid #1095c1;
+    border: 2px solid #1095c1;
+    border-radius: 50px;
     color: #1095c1;
     font-weight: bold;
     font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(#1095c1 0 0) var(--p, 0) / var(--p, 0) no-repeat;
     transition: 0.4s, background-position 0s;
 }
@@ -38,18 +40,30 @@ body {
     color: #fff;
 }
 
-.addButtonDiv {
-    height: 100%;
-    color: #1095c1;
-    border: 1px solid #1095c1;
-    border-top: none;
-    font-weight: bold;
-    font-size: large;
-    background: linear-gradient(#1095c1 0 0) 0 / var(--p, 0) no-repeat;
+.secondaryAdd {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 182px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 3px solid #1095c1;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1095C1;
+    background: linear-gradient(#1095C1 0 0) 0 / var(--p, 0) no-repeat;
     transition: 0.4s, background-position 0s;
 }
 
-.addButtonDiv:hover {
+.secondaryAdd:hover {
     --p: 100%;
     color: #fff;
 }
@@ -66,10 +80,14 @@ body {
     align-items: center;
     cursor: pointer;
     color: #1095c1;
-    font-weight: bold;
-    font-size: xx-large;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 2px;
-    border: 1px solid #1095c1;
+    border: 2px solid #1095c1;
+    border-radius: 50px;
     background: linear-gradient(#1095c1 0 0) bottom / 100% var(--p, 0) no-repeat;
     transition: 0.4s, background-position 0.4s;
 }

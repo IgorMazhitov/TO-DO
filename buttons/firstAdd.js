@@ -18,7 +18,7 @@ let inputBox = `<div class="inputBox">
 
 function add() {
 
-    const container = document.getElementsByClassName('container')[0]
+    const container = document.getElementsByTagName('body')[0]
     const bodyBox = document.getElementsByTagName('body')[0]
 
     if (container.innerHTML.match('inputBox')) {
@@ -30,7 +30,7 @@ function add() {
 
         bodyBox.innerHTML = bodyBox.innerHTML + inputBox
         document.getElementsByClassName('addEvent')[0].style.display = 'none'
-        document.getElementsByClassName('addButtonDiv')[0].style.display = 'none'
+        document.getElementsByClassName('secondaryAdd')[0].style.display = 'none'
 
         calendarStart()
 
@@ -44,7 +44,7 @@ function rightAdd() {
 
     calendarStart() 
 
-    document.getElementsByClassName('addButtonDiv')[0].style.display = 'none' // hide right add button
+    document.getElementsByClassName('secondaryAdd')[0].style.display = 'none' // hide right add button
 
     const inputBoxStyle = document.getElementsByClassName('inputBox')[0]
     inputBoxStyle.style.position = 'absolute'

@@ -27,7 +27,8 @@ function displayDone(bttn) {
                 doneStickerBox.innerHTML = doneStickerBox.innerHTML + 
                 `<div class="doneSticker">
                     <div class="doneDate doneDate${keys}">${keys}</div>
-                    <div class="doneContent">${doneObj[keys].join(' ')}</div
+                    <div class="doneContent">${doneObj[keys].join(' ')}</div>
+                    <button class="doneStickerDelete" onclick="deleteDone(this)">DELETE</button>
                 </div>`
 
             }
@@ -47,7 +48,8 @@ function displayDone(bttn) {
                     doneStickerBox.innerHTML = doneStickerBox.innerHTML + 
                     `<div class="doneSticker">
                         <div class="doneDate doneDate${keys}">${keys}</div>
-                        <div class="doneContent">${doneObj[keys].join(' ')}</div
+                        <div class="doneContent">${doneObj[keys].join(' ')}</div>
+                        <button class="doneStickerDelete" onclick="deleteDone(this)">DELETE</button>
                     </div>`
 
                 }

@@ -24,6 +24,6 @@ function back() {
     const infoContainerDisplay = document.getElementsByClassName('infoContainer')[0]
     infoContainerDisplay.style.display = 'none'
     
-    const addButtonDivDisplay = document.getElementsByClassName('addButtonDiv')[0]
-    addButtonDivDisplay.style.display = 'none'
+    const secondaryAddDisplay = document.getElementsByClassName('secondaryAdd')[0]
+    secondaryAddDisplay.style.display = 'none'
 }

@@ -6,7 +6,7 @@ function displayDo(bttn) {
     let backButDisplay = document.getElementsByClassName('backBut')[0]
     let stickerCheckbox = document.getElementsByClassName('stickerBox')[0]
     let centerAddButton = document.getElementsByClassName('addEvent')[0]
-    let rightAddButton = document.getElementsByClassName('addButtonDiv')[0]
+    let rightAddButton = document.getElementsByClassName('secondaryAdd')[0]
     let doneContainerDisplay = document.getElementsByClassName('doneContainer')[0]
 
     doneContainerDisplay.style.display = 'none'
