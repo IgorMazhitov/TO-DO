@@ -46,9 +46,25 @@
 .infoContacts {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .infoContacts > div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3333%;
+    padding: 5px;
     margin: 2px;
-    border: 1px solid black;
+    background: linear-gradient(#1095c1 0 0) bottom / 100% var(--p, 0) no-repeat;
+    transition: 0.4s, background-position 0.4s;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.infoContacts > div:hover {
+    --p: 100%;
+    color: #fff;
 }
