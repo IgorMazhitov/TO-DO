@@ -36,8 +36,12 @@
     background-color: transparent;
 }
 
-.stickerContent {
-    padding-bottom: 5px;
+.checkBox:last-child {
+    border: none;
+}
+
+.doneEventText:last-child {
+    border: none;
 }
 
 .stickerDate, .doneDate {
@@ -87,12 +91,15 @@
     border: none;
     background: linear-gradient(#1095c1 0 0) var(--p, 0) / var(--p, 0) no-repeat;
     transition: 0.4s, background-position 0s;
+    border: 2px solid #1095c1;
+    border-top: 1px solid #1095c1;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     height: 25px;
     font-weight: bold;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+    color: #1095c1;
 }
 
 .doneStickerDelete:hover {
